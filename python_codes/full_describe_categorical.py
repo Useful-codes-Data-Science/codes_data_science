@@ -74,7 +74,7 @@ def full_describe_categorical(dataframe,variables="all",variability=20,completen
         summary.insert(loc=0, column='variable', value=list(summary.index))
 
         #Calculation of variability
-        #Fill NaN values with "missing" category
+        #Fill NaN values with "missing" category (rellenar misssing, fill missing, imputar missing)
         dataframe=dataframe.fillna("missing")
         #Calculate frequency table for all variables
         frequences=dataframe.apply(pd.value_counts)
