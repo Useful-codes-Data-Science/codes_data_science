@@ -20,7 +20,7 @@ def frequences_table(col,dataframe):
     #Parameters description:
     #dataframe: Table of frequences to be used in DataFrame format
     #col: Variable name to perform the frequency table method
-    #Drop missing values from variable
+    #Drop missing values from variable (remove missing, eliminar missing, eliminar NaN, eliminar datos faltantes)
     frequences=dataframe[col].dropna()
     #Calculate percentages of participation
     percentages=np.around(frequences*100/frequences.sum(),2)
