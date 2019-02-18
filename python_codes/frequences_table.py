@@ -37,7 +37,7 @@ def frequences_table(col,dataframe):
     frequences['max_particip']= frequences['%'].max()    
     frequences=pd.DataFrame(frequences)
     
-    #Drop duplicates from frecuency table
+    #Drop duplicates from frecuency table (unique, distinct, duplicados, distintos, unicos)
     frequences_reduced=frequences.drop_duplicates(["variable","max_particip"])
     
     #Include "missing" value if neccesary
